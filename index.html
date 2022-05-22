@@ -12,7 +12,7 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <form action="results.html" method="GET">
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
@@ -25,9 +25,28 @@
                     <label for="email">Your email</label>
                     <input type="text" id="email" name="lastname">
                     <select name="state" id="my location">
+                        <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
                     </select>
                         
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Preferences</legend>
+                    <h3>Choose your location</h3>
+                    <div>
+                        <input type="radio" id="Aruba" name="location" value="Aruba" checked>
+                        <label for="Aruba">Aruba</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Japan" name="location" value="Japan" checked>
+                        <label for="Japan">Japan</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Maldives" name="location" value="Maldives" checked>
+                        <label for="Maldives">Maldives</label>
+                    </div>
                 </fieldset>
             </div>
             <!-- TODO: Make fieldset and legend -->
@@ -41,6 +60,7 @@
             <!-- TODO: Checkboxes for selecting extra add-ons -->
             
             <!-- TODO: Submit Button -->
+            <input type="Submit">
         </form>
     </main>
     <footer>
